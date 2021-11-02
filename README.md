@@ -8,7 +8,7 @@ El proyecto tiene como objetivo exponer servicios API para la compra/venta de em
 
 ## Lo que incluye en este proyecto
 * Patrón CQRS con .Net C#
-* Implementación de MediatR, AutoMapper, Repository, UnitOfWork. 
+* Implementación de MediatR, Repository, UnitOfWork. 
 * Implementación de Swagger 
 * Unit Test
 
