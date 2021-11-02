@@ -16,10 +16,6 @@ El proyecto tiene como objetivo exponer servicios API para la compra/venta de em
 * Visual Studio 2019
 * .Net Core 3.1
 
-## Prerequisitos
-* Visual Studio 2019
-* .Net Core 3.1
-
 ## Instalación
 1. Clonar el repositorio. 
 2. En raíz se encuentra el script para generar la base de datos (BrokerageDB.sql). Abrir SQL Server Management y correr dicho script.
