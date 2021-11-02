@@ -38,8 +38,8 @@ El aplicativo expone 2 endpoints con el siguiente funcionamiento:
 Este endpoint permite crear una Cuenta con su respectivo saldo. La tabla en la que almacena la información es Accounts.
 * Orders - POST /api/Orders{accountId}/orders
 Este endpoint permite generar una orden de Compra/Venta de emisoras. Las tablas que afecta son las siguientes:
-	1. Accounts: actualiza el saldo de la cuenta (si es una compra resta el saldo, si es una venta incrementa el saldo). Con este campo de saldo se realiza la validación si se tiene suficiente saldo para realizar una compra. 
-	2. CurrentBalances: en esta tabla se tiene la relación de la Cuenta-Emisora-Stock. Cuando se realiza una compra incrementa el stock de la Cuenta-Emisora, cuando se realiza una venta disminuye el stock de la Cuenta-Emisora. Con este campo de Stock se realiza se valida si se tiene la candiad suficiente para realizar una venta. 
+	1. Accounts: actualiza el saldo de la cuenta (si es una compra resta el saldo, si es una venta incrementa el saldo). Contra este campo se realiza la validación si se tiene suficiente saldo para realizar una compra. 
+	2. CurrentBalances: en esta tabla se tiene la relación de la Cuenta-Emisora-Stock. Cuando se realiza una compra incrementa el stock de la Cuenta-Emisora, cuando se realiza una venta disminuye el stock de la Cuenta-Emisora. Contra este campo se valida si se tiene la candiad suficiente de stock para realizar una venta. 
 	3. Operations: En esta tabla se registran todas las operaciones que se realizan para llevar un histórico. 
 
 ## Timestamp
