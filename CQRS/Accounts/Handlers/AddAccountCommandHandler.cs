@@ -19,6 +19,9 @@ namespace CQRS.Accounts.Handlers
             (AccountRepository, UnitOfWork) = (accountRepository, unitOfWork);        
         public async Task<AccountResponse> Handle(AddAccountCommand request, CancellationToken cancellationToken)
         {            
+            if (request.Cash <= 0)
+                throw new System.ArgumentNullException("Cash is wrong");
+
             Account account = AccountRepository.AddAccount(request.Cash);
 
             await UnitOfWork.SaveChangesAsync();

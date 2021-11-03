@@ -11,7 +11,7 @@ using Xunit;
 namespace UnitTestProject
 {
     
-    public class UnitTestBrokerage
+    public class UnitTestBuySellOrderCommandHandler
     {
         /// <summary>
         /// Método para probar la Compra de emisora, es decir, con valores correctos.
